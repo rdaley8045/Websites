@@ -1,11 +1,13 @@
 html
 {
-	height: 100%;
-}
+	background-image: linear-gradient(#FC5E55 , #FA4083);
 
+}
 body
 {
-	background-image: linear-gradient(#FC5E55 , #FA4083);
+	background-image: url(images/image-lion-background.png);
+	background-repeat: no-repeat;
+	background-position: top center;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-size: 1.125rem;
@@ -31,6 +33,8 @@ header
 	padding-top: 20px;
 	padding-bottom: 20px;
 	align-items: center;
+	justify-content: space-between;
+	border-bottom:	1px solid lightgrey;
 }
 
 main 
@@ -39,6 +43,12 @@ main
 	display: flex;
 	align-items: center;
 	
+}
+
+.main2
+{
+	min-height: 300px;
+	padding-top: 50px;
 }
 
 .cards
@@ -97,7 +107,7 @@ main
 	flex: 1;
 }
 
-.header1
+.logo
 {
 	flex: 2;
 }
@@ -155,8 +165,108 @@ p
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
 }
 
+.mybutton:hover
+{
+	background-color: rgb(29, 213, 103);
+	transition-duration: 1s;
+}
+
 a.mybutton
 {
 	display: inline-block;
 	margin-top: 20px;
+}
+
+.navbutton
+{
+	border:solid 1px white;
+	font-family: 'Playfair Display', serif;
+	padding: 11px 25px;
+	display: inline-block;
+	position: relative;
+}
+
+.testimonials
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.tbox
+{
+	width: 47%;
+	padding: 50px;
+	border: 1px solid white;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+
+.tbox p:last-of-type
+{
+	font-size: .8rem;
+	padding-left: 30px;
+}
+
+.dropdown
+{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.navbutton:hover .dropdown
+{
+	display: block;
+}
+
+.dropdown .navbutton
+{
+	width: 140px;
+	background-color: white
+
+}
+
+.dropdown .navbutton a
+{
+	color: #FA4083;	
+}
+
+.inputwrapper
+{
+	margin-bottom: 20px;
+
+}
+
+input[type=text], input[type=email], textarea
+{
+	padding: 12px 20px;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: .85rem;
+	box-sizing: border-box;
+}
+
+.newline
+{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.margin-right-a
+{
+	margin-right: 20px;
+}
+
+input[type=radio]
+{
+	margin-right: 10px;
+}
+
+form
+{
+	padding: 40px 10px;
 }
